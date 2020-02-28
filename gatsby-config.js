@@ -32,6 +32,7 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
+      resolve: "gatsby-plugin-netlify-identity-widget",
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
@@ -54,12 +55,6 @@ module.exports = {
             resolve: "gatsby-remark-copy-linked-files",
             options: {
               destinationDir: "static"
-            }
-          },
-          {
-            resolve: "gatsby-plugin-netlify-identity-widget",
-            options: {
-              container: "#netlify-modal"
             }
           }
         ]
